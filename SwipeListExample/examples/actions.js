@@ -71,6 +71,7 @@ export default function Actions() {
             Animated.timing(rowHeightAnimatedValue, {
                 toValue: 0,
                 duration: 200,
+                useNativeDriver:false
             }).start(() => {
                 removeRow();
             });
@@ -214,6 +215,7 @@ export default function Actions() {
     return (
         <View style={styles.container}>
             <SwipeListView
+                useNativeDriver={false}
                 data={listData}
                 renderItem={renderItem}
                 renderHiddenItem={renderHiddenItem}

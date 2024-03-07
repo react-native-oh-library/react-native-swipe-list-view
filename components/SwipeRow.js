@@ -679,10 +679,15 @@ class SwipeRow extends Component {
                         swipeAnimatedValue: this._translateX,
                     })}
                 </View>
-                <View style={[{
-                    position:'relative',
-                    zIndex:2
-                }]} pointerEvents="box-none">
+                <View
+                    style={[
+                        {
+                            position: 'relative',
+                            zIndex: 2,
+                        },
+                    ]}
+                    pointerEvents="box-none"
+                >
                     {this.renderRowContent()}
                 </View>
             </View>

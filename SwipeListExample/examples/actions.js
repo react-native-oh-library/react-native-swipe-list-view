@@ -71,7 +71,7 @@ export default function Actions() {
             Animated.timing(rowHeightAnimatedValue, {
                 toValue: 0,
                 duration: 200,
-                useNativeDriver:false
+                useNativeDriver: false,
             }).start(() => {
                 removeRow();
             });

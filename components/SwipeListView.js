@@ -15,7 +15,7 @@ class SwipeListView extends PureComponent {
         this._rows = {};
         this.openCellKey = null;
         this.listViewProps = {};
-        if (Platform.OS === 'ios') {
+        if (Platform.OS === 'ios' || Platform.OS === 'harmony') {
             // Keep track of scroll offset and layout changes on iOS to be able to handle
             // https://github.com/jemise111/react-native-swipe-list-view/issues/109
             this.yScrollOffset = 0;
@@ -105,7 +105,7 @@ class SwipeListView extends PureComponent {
     }
 
     onScroll(e) {
-        if (Platform.OS === 'ios') {
+        if (Platform.OS === 'ios' || Platform.OS === 'harmony') {
             this.yScrollOffset = e.nativeEvent.contentOffset.y;
         }
         if (this.openCellKey) {

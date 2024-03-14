@@ -128,10 +128,12 @@ export default function Actions() {
         if (rightActionActivated) {
             Animated.spring(rowActionAnimatedValue, {
                 toValue: 500,
+                useNativeDriver: false
             }).start();
         } else {
             Animated.spring(rowActionAnimatedValue, {
                 toValue: 75,
+                useNativeDriver: false
             }).start();
         }
 

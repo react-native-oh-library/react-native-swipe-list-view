@@ -12,7 +12,7 @@ import {
 import { SwipeListView } from 'react-native-swipe-list-view';
 
 const rowSwipeAnimatedValues = {};
-Array(20)
+Array(10)
     .fill('')
     .forEach((_, i) => {
         rowSwipeAnimatedValues[`${i}`] = new Animated.Value(0);
@@ -20,7 +20,7 @@ Array(20)
 
 export default function SwipeValueBasedUi() {
     const [listData, setListData] = useState(
-        Array(20)
+        Array(10)
             .fill('')
             .map((_, i) => ({ key: `${i}`, text: `item #${i}` }))
     );
@@ -107,10 +107,7 @@ export default function SwipeValueBasedUi() {
                 renderItem={renderItem}
                 renderHiddenItem={renderHiddenItem}
                 leftOpenValue={75}
-                rightOpenValue={-150}
-                previewRowKey={'0'}
-                previewOpenValue={-40}
-                previewOpenDelay={3000}
+                rightOpenValue={-150}              
                 onRowDidOpen={onRowDidOpen}
                 onSwipeValueChange={onSwipeValueChange}
             />

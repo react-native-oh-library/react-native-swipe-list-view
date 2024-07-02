@@ -1,6 +1,6 @@
 {
     "name": "@react-native-oh-tpl/react-native-swipe-list-view",
-    "version": "3.2.9-0.0.1",
+    "version": "3.2.9-0.0.2",
     "main": "lib/index.js",
     "author": "Jesse Sessler <jesse.sessler@gmail.com>",
     "description": "A ListView with rows that swipe open and closed.",

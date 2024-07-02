@@ -114,6 +114,7 @@ export default function SwipeValueBasedUi() {
                 onRowDidOpen={onRowDidOpen}
                 onSwipeValueChange={onSwipeValueChange}
                 useNativeDriver={false}
+                recalculateHiddenLayout={true}
             />
         </View>
     );
